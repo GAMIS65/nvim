@@ -15,3 +15,4 @@
 | `<leader>d` | Remove file from Harpoon list |
 | `<C-e>` | Open Harpoon menu  |
 | `<leader>1` | Go to Harpoon file 1|
+| `<leader>u` | Undotree|
