@@ -16,7 +16,6 @@
 | `<C-e>` | Open Harpoon menu  |
 | `<leader>1` | Go to Harpoon file 1|
 | `<leader>u` | Undotree|
-| `<leader>u` | Undotree|
 | `gc` | Comment out selection|
 | `Shift + k` | Show type definition|
 | `<leader>e` | Show error|
