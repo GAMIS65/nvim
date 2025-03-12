@@ -11,7 +11,7 @@ return {
     'EdenEast/nightfox.nvim',
     config = function()
       vim.opt.termguicolors = true
-      vim.cmd 'colorscheme carbonfox'
+      vim.cmd 'colorscheme dayfox'
     end,
   },
 }

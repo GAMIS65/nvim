@@ -75,6 +75,9 @@ vim.opt.scrolloff = 10
 --  See `:help vim.keymap.set()`
 vim.keymap.set('n', 'd', '"_d', { noremap = true })
 vim.keymap.set('x', 'd', '"_d', { noremap = true })
+vim.keymap.set('x', 'p', function()
+  return 'pgv"' .. vim.v.register .. 'y'
+end, { remap = false, expr = true })
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
