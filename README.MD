@@ -19,3 +19,5 @@
 | `gc` | Comment out selection|
 | `Shift + k` | Show type definition|
 | `<leader>e` | Show error|
+| `<leader>xx` | Trouble diagnostics toggle|
+| `<leader>cs` | Trouble symbols toggle|
