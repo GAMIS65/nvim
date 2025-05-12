@@ -79,6 +79,10 @@ vim.keymap.set('x', 'p', function()
   return 'pgv"' .. vim.v.register .. 'y'
 end, { remap = false, expr = true })
 
+-- Moving lines up and down
+vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
