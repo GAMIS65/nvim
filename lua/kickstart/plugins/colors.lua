@@ -8,10 +8,9 @@ end
 
 return {
   {
-    'EdenEast/nightfox.nvim',
+    'rebelot/kanagawa.nvim',
     config = function()
-      vim.opt.termguicolors = true
-      vim.cmd 'colorscheme dayfox'
+      vim.cmd("colorscheme kanagawa-wave")
     end,
   },
 }
