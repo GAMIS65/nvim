@@ -71,10 +71,13 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- [[ Folding ]]
 vim.opt.foldmethod = "indent"
 vim.opt.foldcolumn = "1"  -- Show a fold column
 vim.opt.foldlevel = 99    -- Keep most folds open by default
 vim.opt.foldenable = true -- Enable folding
+
+vim.opt.swapfile = false
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
