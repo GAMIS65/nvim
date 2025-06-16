@@ -71,6 +71,11 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+vim.opt.foldmethod = "indent"
+vim.opt.foldcolumn = "1"  -- Show a fold column
+vim.opt.foldlevel = 99    -- Keep most folds open by default
+vim.opt.foldenable = true -- Enable folding
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 vim.keymap.set('n', 'd', '"_d', { noremap = true })
@@ -280,7 +285,7 @@ require('lazy').setup({
       {
         '<leader>sf',
         function()
-          Snacks.picker.smart()
+          Snacks.picker.smart({ filter = { cwd = true } })
         end,
         desc = '[S]earch [F]iles',
       },
@@ -806,18 +811,13 @@ require('lazy').setup({
   -- require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.lint',
   require 'kickstart.plugins.colors',
-  require 'custom.plugins.undotreer',
-  require 'custom.plugins.autoclose',
-  require 'custom.plugins.harpoon',
-  require 'custom.plugins.trouble',
-  require 'custom.plugins.prettier',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
