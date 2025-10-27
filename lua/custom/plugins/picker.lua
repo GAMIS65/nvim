@@ -98,5 +98,19 @@ return {
 			end,
 			desc = "[S]earch [N]eovim files",
 		},
+		{
+			"<leader>u",
+			function()
+				require("snacks").picker.undo()
+			end,
+			desc = "Undo history (Snacks)",
+		},
+		{
+			"<leader>uC",
+			function()
+				Snacks.picker.colorschemes()
+			end,
+			desc = "Colorschemes",
+		},
 	},
 }

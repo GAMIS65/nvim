@@ -30,6 +30,8 @@ end)
 -- Enable break indent
 vim.o.breakindent = true
 
+vim.opt.swapfile = false
+
 -- Save undo history
 vim.o.undofile = true
 
